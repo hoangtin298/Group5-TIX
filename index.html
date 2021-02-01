@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="./img/tix-head-logo.png" />
+  <title>TIX</title>
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!-- Font Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Veno box -->
+  <link rel="stylesheet" href="./css/venobox.css" />
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="myHeader">
+    <nav class="navbar navbar-expand-sm navbar-light myNavbar container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/tix-logo.png" alt="tix-logo" class="ml-3" />
+      </a>
+      <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <!-- Right of navbar -->
+        <div class="right">
+          <div class="acount">
+            <a href="#">
+              <i class="fa fa-user-circle"></i>
+              <span>Đăng Nhập</span>
+            </a>
+          </div>
+          <div class="place">
+            <a href="#">
+              <i class="fa fa-map-marker-alt"></i>
+              <span>Hồ Chí Minh</span>
+              <i class="fas fa-angle-down"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Center of navbar -->
+        <div class="center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lịch Chiếu </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cụm Rạp </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin Tức </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ứng Dụng </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carou-1.png" class="d-block w-100" alt="carousel" />
+          <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+            <img src="./img/play-video.png" alt="play-button" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carou-2.jpg" class="d-block w-100" alt="carousel" />
+          <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+            <img src="./img/play-video.png" alt="play-button" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carou-3.png" class="d-block w-100" alt="carousel" />
+          <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+            <img src="./img/play-video.png" alt="play-button" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carou-4.jpg" class="d-block w-100" alt="carousel" />
+          <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+            <img src="./img/play-video.png" alt="play-button" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carou-5.jpg" class="d-block w-100" alt="carousel" />
+          <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+            <img src="./img/play-video.png" alt="play-button" />
+          </a>
+        </div>
+      </div>
+
+      <div class="homeTool">
+        <div class="dropdown normal-block">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            Phim
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Chị Mười Ba: 3 Ngày Sinh Tử (C18)</a>
+            <a class="dropdown-item" href="#">Thợ Săn Quái Vật - Monster Hunter (C13)</a>
+            <a class="dropdown-item" href="#">Cuộc Sống Nhiệm Màu - Soul - (P)</a>
+            <a class="dropdown-item" href="#">Nữ Thần Chiến Binh 1984 - Wonder Woman 1984 (C13)</a>
+            <a class="dropdown-item" href="#">Sám Hối (C18)</a>
+            <a class="dropdown-item" href="#">'Em' Là Của Em (C16)</a>
+            <a class="dropdown-item" href="#">Cậu Vàng (C16)</a>
+            <a class="dropdown-item" href="#">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</a>
+            <a class="dropdown-item" href="#">Đường Cong Của Quỷ - The Cursed Lesson (C18)</a>
+            <a class="dropdown-item" href="#">Sword Art Online: Ordinal Scale (C13)</a>
+            <a class="dropdown-item" href="#">Thuyền Trưởng Răng Kiếm và Viên Kim Cương Ma Thuật - Captain
+              Sabertooth and The Magic Diamond (P)</a>
+            <a class="dropdown-item" href="#">Doraemon: Nobita và Những Bạn Khủng Long Mới - Doraemon the
+              Movie: Nobita's New Dinosaurs (P)</a>
+            <a class="dropdown-item" href="#">Cuộc Giải Cứu Sinh Tử - Redemption Day (C18)</a>
+          </div>
+        </div>
+        <div class="dropdown small-block">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            Rạp
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">BHD Star Bitexco</a>
+            <a class="dropdown-item" href="#">BHD Star Vincom 3/2</a>
+            <a class="dropdown-item" href="#">BHD Star Vincom Lê Văn Việt</a>
+            <a class="dropdown-item" href="#">BHD Star Vincom Quang Trung</a>
+            <a class="dropdown-item" href="#">BHD Star Vincom Thảo Điền</a>
+            <a class="dropdown-item" href="#">BHD Star ‎Phạm Hùng</a>
+            <a class="dropdown-item" href="#">CineStar Hai Bà Trưng</a>
+            <a class="dropdown-item" href="#">DCINE Bến Thành</a>
+          </div>
+        </div>
+        <div class="dropdown small-block">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            Ngày xem
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Hôm nay</a>
+            <a class="dropdown-item" href="#">Ngày mai</a>
+          </div>
+        </div>
+        <div class="dropdown small-block">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            Suất chiếu
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Không có suất chiếu</a>
+          </div>
+        </div>
+        <div class="dropdown small-block">
+          <button class="btn btn-primary btn-muaVe">MUA VÉ NGAY</button>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Movie  -->
+  <section class="myMovie">
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs myNavTab" id="nav-tab-movie" role="tablist">
+          <a class="nav-item nav-link active" id="nav-showing-tab" data-toggle="tab" href="#movie-showing" role="tab"
+            aria-controls="movie-showing" aria-selected="true">Đang Chiếu</a>
+          <a class="nav-item nav-link" id="nav-coming-tab" data-toggle="tab" href="#movie-coming" role="tab"
+            aria-controls="movie-coming" aria-selected="false">Sắp Chiếu</a>
+        </div>
+      </nav>
+      <div class="tab-content myTabContent" id="nav-tabContent">
+        <div class="tab-pane fade show active owl-carousel owl-theme film-owl-carousel-showing" id="movie-showing"
+          role="tabpanel" aria-labelledby="movie-showing-tab">
+          <div class="row myRow film__item">
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-14.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">7.4</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                  <div class="label">
+                    <img src="./img/bom-tan.png" alt="label" />
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Chị Mười Ba: 3 Ngày Sinh Tử (C18)
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-15.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">8.8</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                  <div class="label">
+                    <img src="./img/bom-tan.png" alt="label" />
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C13</span>
+                    Thợ Săn Quái Vật - Monster Hunter (C13)
+                  </div>
+                  <div class="time">104 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-16.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">9</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Cuộc Sống Nhiệm Màu - Soul - (P)
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-20.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">6.9</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                  <div class="label">
+                    <img src="./img/bom-tan.png" alt="label" />
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C13</span>
+                    Nữ Thần Chiến Binh 1984 - Wonder Woman 1984 (C13)
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-17.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.8</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Sám Hối (C18)
+                  </div>
+                  <div class="time">99 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-18.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">7.2</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    'Em' Là Của Em (C16)
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-21.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.7</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    Cậu Vàng (C16)
+                  </div>
+                  <div class="time">96 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-19.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">8.8</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)
+                  </div>
+                  <div class="time">128 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myRow film__item">
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-22.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.3</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Đường Cong Của Quỷ - The Cursed Lesson (C18)
+                  </div>
+                  <div class="time">88 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-23.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.5</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C13</span>
+                    Sword Art Online: Ordinal Scale (C13)
+                  </div>
+                  <div class="time">119 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-24.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">7.9</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Thuyền Trưởng Răng Kiếm và Viên Kim Cương Ma Thuật -
+                    Captain Sabertooth and The Magic Diamond (P)
+                  </div>
+                  <div class="time">82 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-25.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">6.3</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    Người Cần Quên Phải Nhớ (C16)
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-26.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">8.2</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Doraemon: Nobita và Những Bạn Khủng Long Mới - Doraemon
+                    the Movie: Nobita's New Dinosaurs (P)
+                  </div>
+                  <div class="time">110 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-27.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.6</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Cuộc Giải Cứu Sinh Tử - Redemption Day (C18)
+                  </div>
+                  <div class="time">94 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-28.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.5</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Hot Gimmick: Girl Meets Boy (C18)
+                  </div>
+                  <div class="time">119 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-29.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="point">
+                    <p class="txtPoint">5.5</p>
+                    <p class="starPoint">
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/star-img.png" alt="star" />
+                      <img src="./img/half.png" alt="1/2" />
+                    </p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C13</span>
+                    Hello World (C13)
+                  </div>
+                  <div class="time">97 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade owl-carousel owl-theme film-owl-carousel-coming" id="movie-coming" role="tabpanel"
+          aria-labelledby="movie-coming-tab">
+          <div class="row myRow film_item">
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-30.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>01/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Kỵ Sĩ Cưỡi Rồng - Dragon Rider (P)
+                  </div>
+                  <div class="time">92 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-31.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>08/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Phòng Chat Quỷ Ám - Host (C18)
+                  </div>
+                  <div class="time">57 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-32.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Gái Già Lắm Chiêu V - Những Cuộc Đời Vương Giả
+                  </div>
+                  <div class="time">0 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-33.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>00/00</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Bạn Quỷ - Come Play (C18)
+                  </div>
+                  <div class="time">96 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-34.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Lật Mặt: 48h
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-35.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>08/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C18</span>
+                    Nhà Kho Quỷ Ám - The Shed (C18)
+                  </div>
+                  <div class="time">98 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-36.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>08/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Sumikkogurashi: Hội Mê Xó Xỉnh - Sumikko Gurashi the
+                    Movie: The Unexpected Picture Book and the Secret Child
+                    (P)
+                  </div>
+                  <div class="time">66 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-37.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>08/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    Song Sinh - Ropes (C16)
+                  </div>
+                  <div class="time">87 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myRow film_item">
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-38.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>08/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C13</span>
+                    Giáp Thần Gundam: Ký Ức Chiến Binh - Mobile Suit Gundam:
+                    Narrative (C13)
+                  </div>
+                  <div class="time">88 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-39.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>15/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-c">C16</span>
+                    Miền Đất Hứa - The Promised Neverland (C16)
+                  </div>
+                  <div class="time">119 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-40.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>22/01</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Nam Sinh Số 11
+                  </div>
+                  <div class="time">112 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-41.png" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Trạng Tí
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-42.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Thanh Sói
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-43.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Quái Thú So Chiêu - Rumble
+                  </div>
+                  <div class="time">0 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-44.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Eternals
+                  </div>
+                  <div class="time">100 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="film">
+                <div class="thumbNail">
+                  <img src="./img/movie-45.jpg" alt="movie-thumbnail" />
+                  <a href="https://www.youtube.com/watch?v=vTJdVE_gjI0" data-vbtype="video" class="play-video-button">
+                    <img src="./img/play-video.png" alt="play-button" />
+                  </a>
+                  <div class="release-date">
+                    <p>12/02</p>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <span class="age-p">P</span>
+                    Bố Già
+                  </div>
+                  <div class="time">0 phút</div>
+                  <div class="showHover">
+                    <a href="#">MUA VÉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="intro">
+    <div class="container">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active title_qc " data-toggle="tab" href="#home">Điện ảnh 24h</a>
+        </li>
+        <li class="nav-item title_qc">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Review</a>
+        </li>
+        <li class="nav-item title_qc ">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Khuyến mãi</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+          <div class="row d-flex flex-wrap">
+            <div class="col-6">
+              <div class="item">
+                <img class="main_news" src="./img/news-1.jpg" alt="">
+                <a class="new_title" href="">"Bóc tem" tổ giải trí mới toang của Hà thành</a>
+                <p>Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo độc-lạ-chill nhất từ trước đến giờ sẽ
+                  chính thức khai trương tại 360 Giải Phóng!</p>
+
+              </div>
+              <div class="icon d-flex">
+                <div class="like  ">
+                  <a class="d-flex " href="">
+                    <img src="./img/like.png" alt="">
+                    <p>2</p>
+                  </a>
+                </div>
+                <div class="d-flex " class="comment">
+                  <a class="d-flex" href="">
+                    <img src="./img/comment.png" alt="">
+                    <p>0</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="item">
+                <img class="main_news" src="./img/news-2.png" alt="">
+                <a class="new_title" href="">Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công chiếu</a>
+                <p>Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ phim điện ảnh đạt 100 tỷ đồng doanh
+                  thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ trong một khung hình để
+                  ăn mừng thành tích ấn tượng </p>
+
+              </div>
+              <div class="icon d-flex">
+                <div class="like  ">
+                  <a class="d-flex " href="">
+                    <img src="./img/like.png" alt="">
+                    <p>2</p>
+                  </a>
+                </div>
+                <div class="d-flex " class="comment">
+                  <a class="d-flex" href="">
+                    <img src="./img/comment.png" alt="">
+                    <p>0</p>
+                  </a>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="under">
+
+              <div class="row">
+                <div class="col-4 item_2">
+                  <div class="item_detail">
+                    <img class="main_news" src="./img/news-3.jpg" alt="">
+                    <a class="new_title" href="">NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ TRANG PHỤC ...
+                    </a>
+                    <p>Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã chính thức phát động cuộc thi thiết kế
+                      trang
+                      phục
+                      cho siêu anh hùng VINAMAN với tổng</p>
+                  </div>
+                  <div class="icon d-flex">
+                    <div class="like  ">
+                      <a class="d-flex " href="">
+                        <img src="./img/like.png" alt="">
+                        <p>2</p>
+                      </a>
+                    </div>
+                    <div class="d-flex " class="comment">
+                      <a class="d-flex" href="">
+                        <img src="./img/comment.png" alt="">
+                        <p>0</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 item_3">
+                  <div class="item_detail">
+                    <img class="main_news" src="./img/news-4.png" alt="">
+                    <a class="new_title" href="">Kaity Nguyễn trở thành mỹ nhân mới của vũ trụ Gái Già Lắm Chiêu</a>
+                    <p>Sau khi tiết lộ nhân tố đầu tiên là NSND Lê Khanh sẽ tiếp tục tham gia phần tiếp theo của Gái già
+                      lắm
+                      chiêu với mái tóc được cắt ngắn đầy mạnh mẽ và </p>
+
+                  </div>
+                  <div class="icon d-flex">
+                    <div class="like  ">
+                      <a class="d-flex " href="">
+                        <img src="./img/like.png" alt="">
+                        <p>2</p>
+                      </a>
+                    </div>
+                    <div class="d-flex " class="comment">
+                      <a class="d-flex" href="">
+                        <img src="./img/comment.png" alt="">
+                        <p>0</p>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+                <div class="item_4 col-4 ">
+                  <div class="detail phan ">
+                    <img src="./img/news-5.png" alt="">
+                    <a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/news-5.png" alt="">
+                    <a href="">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/news-6.png" alt="">
+                    <a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/news-7.png" alt="">
+                    <a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="tab-pane container fade" id="menu1">
+          <div class="row d-flex flex-wrap">
+            <div class="col-6">
+              <div class="item">
+                <img class="main_news" src="./img/intro1.png" alt="">
+                <a class="new_title" href="">
+                  Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</a>
+                <p>Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám</p>
+
+              </div>
+              <div class="icon d-flex">
+                <div class="like  ">
+                  <a class="d-flex " href="">
+                    <img src="./img/like.png" alt="">
+                    <p>2</p>
+                  </a>
+                </div>
+                <div class="d-flex " class="comment">
+                  <a class="d-flex" href="">
+                    <img src="./img/comment.png" alt="">
+                    <p>0</p>
+                  </a>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="item">
+                <img class="main_news" src="./img/intro2.png" alt="">
+                <a class="new_title" href="">Review: Dinh Thự Oan Khuất (Ghost Of War)</a>
+                <p>Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan Khuất vẫn chưa đủ để đem khán giả trở
+                  lại phòng vé! </p>
+
+              </div>
+              <div class="icon d-flex">
+                <div class="like  ">
+                  <a class="d-flex " href="">
+                    <img src="./img/like.png" alt="">
+                    <p>2</p>
+                  </a>
+                </div>
+                <div class="d-flex " class="comment">
+                  <a class="d-flex" href="">
+                    <img src="./img/comment.png" alt="">
+                    <p>0</p>
+                  </a>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="under">
+
+              <div class="row">
+                <div class="col-4 item_2">
+                  <div class="item_detail">
+                    <img class="main_news" src="./img/intro3.png" alt="">
+                    <a class="new_title" href="">‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh
+                    </a>
+                    <p>Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là một lát cắt nữa
+                      về nạn phân biệt chủng tộc - nỗi đau gây nhứ</p>
+                  </div>
+                  <div class="icon d-flex">
+                    <div class="like  ">
+                      <a class="d-flex " href="">
+                        <img src="./img/like.png" alt="">
+                        <p>2</p>
+                      </a>
+                    </div>
+                    <div class="d-flex " class="comment">
+                      <a class="d-flex" href="">
+                        <img src="./img/comment.png" alt="">
+                        <p>0</p>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+                <div class="col-4 item_3">
+                  <div class="item_detail">
+                    <img class="main_news" src="./img/intro4.png" alt="">
+                    <a class="new_title" href="">‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh</a>
+                    <p>Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là một lát cắt nữa
+                      về nạn phân biệt chủng tộc - nỗi đau gây nhứ </p>
+
+                  </div>
+                  <div class="icon d-flex">
+                    <div class="like  ">
+                      <a class="d-flex " href="">
+                        <img src="./img/like.png" alt="">
+                        <p>2</p>
+                      </a>
+                    </div>
+                    <div class="d-flex " class="comment">
+                      <a class="d-flex" href="">
+                        <img src="./img/comment.png" alt="">
+                        <p>0</p>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+                <div class="item_4 col-4 ">
+                  <div class="detail phan ">
+                    <img src="./img/intro5.png" alt="">
+                    <a href="">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/intro6.jpg" alt="">
+                    <a href="">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/review-sieu-ve-si-intro7.jpg" alt="">
+                    <a href="">Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</a>
+                  </div>
+                  <div class="detail phan">
+                    <img src="./img/intro8.jpg  " alt="">
+                    <a href="">Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+  <section class="myBanner" style="background: url(./img/banner-img.jpg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 left">
+          <div class="content">
+            <p class="textLeft">Ứng dụng tiện lợi dành cho</p>
+            <p class="textLeft">người yêu điện ảnh</p>
+            <br />
+            <p class="smallTextLeft">
+              Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp
+              và đổi quà hấp dẫn.
+            </p>
+            <br />
+            <button>App miễn phí - Tải về ngay!</button>
+            <p class="bottomTextLeft">
+              TIX có hai phiên bản
+              <a href="#">IOS</a>
+              &
+              <a href="#">Android</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 right">
+          <img src="./img/banner-phone.png" alt="phone" class="phoneRight" />
+          <div class="sliderScreenRight owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/banner-slider-1.jpg" alt="slider" />
+            </div>
+            <div class="item">
+              <img src="./img/banner-slider-2.jpg" alt="slider" />
+            </div>
+            <div class="item">
+              <img src="./img/banner-slider-3.jpg" alt="slider" />
+            </div>
+            <div class="item">
+              <img src="./img/banner-slider-4.jpg" alt="slider" />
+            </div>
+            <div class="item">
+              <img src="./img/banner-slider-5.jpg" alt="slider" />
+            </div>
+            <div class="item">
+              <img src="./img/banner-slider-6.jpg" alt="slider" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="myFooter">
+    <div class="container">
+      <div class="top row">
+        <div class="left col-md-4 col-xs-12">
+          <p class="title hide-on-mobile">TIX</p>
+          <div class="content">
+            <div class="text col-lg-6 col-md-12 hide-on-mobile">
+              <a href="#">FAQ</a>
+              <a href="#">Brand Guidelines</a>
+            </div>
+            <div class="text col-lg-6 col-md-12 display-on-mobile">
+              <a href="#">Thỏa thuận sử dụng</a>
+              <a href="#">Chính sách bảo mật</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle col-md-4 col-xs-12 hide-on-mobile">
+          <p class="title">ĐỐI TÁC</p>
+          <div class="row">
+            <a href="#">
+              <img src="./img/footer-icon-1.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/footer-icon-2.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/footer-icon-3.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/footer-icon-4.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/footer-icon-5.png" alt="icon-footer" />
+            </a>
+          </div>
+          <div class="row">
+            <a href="#">
+              <img src="./img/icon-footer-6.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-7.jpg" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-8.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-9.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-10.jpg" alt="icon-footer" />
+            </a>
+          </div>
+          <div class="row">
+            <a href="#">
+              <img src="./img/icon-footer-11.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-12.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-13.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-14.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-15.png" alt="icon-footer" />
+            </a>
+          </div>
+          <div class="row">
+            <a href="#">
+              <img src="./img/icon-footer-16.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-17.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-18.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-19.png" alt="icon-footer" />
+            </a>
+            <a href="#">
+              <img src="./img/icon-footer-20.jpg" alt="icon-footer" />
+            </a>
+          </div>
+        </div>
+        <div class="right row col-md-4 col-xs-12">
+          <div class="col-lg-6 hide-on-mobile">
+            <p class="title hide-on-mobile">MOBILE APP</p>
+            <a href="#">
+              <img src="./img/apple-logo.png" alt="icon" />
+            </a>
+            <a href="#"><img src="./img/android-logo.png" alt="icon" /></a>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <p class="title hide-on-mobile">SOCIAL</p>
+            <a href="#"><img src="./img/facebook-logo.png" alt="icon" /></a>
+            <a href="#"><img src="./img/zalo-logo.png" alt="icon" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-footer"></div>
+      <div class="bottom row">
+        <div class="col-sm-12 col-md-1 left">
+          <img src="./img/zion-logo.jpg" alt="loading" />
+        </div>
+        <div class="col-sm-12 col-md-9 middle">
+          <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+          <p>
+            Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+            Chí Minh, Việt Nam.
+          </p>
+          <p>
+            Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br />
+            đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế
+            hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+          </p>
+          <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+          <p>Email: <a href="mailto:support@tix.vn">support@tix.vn</a></p>
+        </div>
+        <div class="col-sm-12 col-md-2 right">
+          <a href="http://online.gov.vn/Home/WebDetails/62782?AspxAutoDetectCookieSupport=1" target="_blank">
+            <img src="./img/bo-cong-thuong-logo.png" alt="loading" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Optional JavaScript-->
+  <!--jQuery first, then Popper.js, then Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Venobox -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/venobox.min.js"></script>
+
+  <!-- Owl carousel -->
+
+  <!-- <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script> -->
+  <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <!-- JS -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".play-video-button").venobox();
+
+      $(".film-owl-carousel-showing").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+
+        nav: true,
+
+        // autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+
+      $(".film-owl-carousel-coming").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+
+        nav: true,
+
+        // autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+
+      $(".sliderScreenRight").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: false,
+
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    });
+  </script>
+</body>
+
+</html>

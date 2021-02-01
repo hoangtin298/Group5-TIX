@@ -1,0 +1,74 @@
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin limit-line($number-of-line) {
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: $number-of-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin homeToolBlock() {
+  @include text($color-black-0, $fs-0, $fw-normal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: $color-white-0;
+  border: none;
+  color: $color-black-0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: $color-white-0;
+  }
+}
+
+@mixin borderRightHomeToolBlock() {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid #fff;
+  border-right-color: rgba(238, 238, 238, 0.88);
+}
+
+@mixin film-date-point {
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  padding: 2px;
+  line-height: 1.1;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $breakpoint,
+    );
+
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "sai roi";
+  }
+}

@@ -1,0 +1,212 @@
+.myMovie {
+  margin-top: $mg-2 * 3;
+  .myNavTab {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      border: none;
+      @include text($color-black-0, $fs-4, $fw-bold-0);
+      padding: $pd-2;
+      transition: all 0.2s;
+      &:hover:not(.active) {
+        font-size: $fs-max;
+      }
+    }
+    .active {
+      @include text($color-red-text, $fs-max, $fw-bold-0);
+    }
+  }
+  .myTabContent {
+    padding: $pd-2 * 2 0;
+    .tab-pane:not(.active) {
+      display: none;
+    }
+    .film {
+      margin-bottom: $mg-2;
+
+      .thumbNail {
+        position: relative;
+        img {
+          display: block;
+          width: 100%;
+          border-radius: $border-radius;
+          overflow: hidden;
+        }
+        .play-video-button {
+          height: $fs-max * 2;
+          width: $fs-max * 2;
+          position: absolute;
+          z-index: 20;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.2s;
+          opacity: 0;
+          visibility: hidden;
+        }
+        .release-date {
+          z-index: 20;
+          @include text($color-white-0, $fs-2, $fw-normal);
+          @include film-date-point();
+          position: absolute;
+          bottom: 12px;
+          right: 12px;
+
+          p {
+            margin: 0;
+          }
+        }
+        .point {
+          @include film-date-point();
+          position: absolute;
+          top: $fs-min;
+          right: $fs-min;
+
+          .txtPoint {
+            @include text($color-white-0, $fs-2, $fw-bold-1);
+            text-align: center;
+            transform: scaleY(1.2);
+            margin: 0;
+          }
+          .starPoint {
+            text-align: center;
+            margin: 0 !important;
+            img {
+              max-width: 6px;
+              display: inline-block;
+            }
+          }
+        }
+        .label {
+          position: absolute;
+          top: -20px;
+          left: -10px;
+          width: 80%;
+          pointer-events: none;
+          overflow: hidden;
+          transform: translate(-5%, -12%);
+          max-width: 150px;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 0;
+          z-index: 20;
+          background: linear-gradient(to top, $color-black-0, transparent);
+        }
+      }
+      .info {
+        margin-top: $mg-1;
+        position: relative;
+        .name {
+          visibility: visible;
+          opacity: 1;
+          transition: all 0.2s;
+          @include text($color-black-0, $fs-2, $fw-bold-0);
+          height: 42px;
+          max-height: 42px;
+          line-height: 22px;
+          @include limit-line(2);
+          span {
+            @include text($color-white-0, $fs-0, $fw-bold-0);
+            border-radius: $border-radius;
+            padding: 0 $pd-0;
+            min-width: 33px;
+            margin-right: 6px;
+            display: inline-block;
+            text-align: center;
+          }
+          .age-c {
+            background-color: $color-red-bg;
+          }
+          .age-p {
+            background-color: $color-green-bg;
+          }
+        }
+        .time {
+          visibility: visible;
+          opacity: 1;
+          transition: all 0.2s;
+          padding-top: $pd-0;
+          @include text($color-black-0, $fs-1, $fw-normal);
+        }
+        .showHover {
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.2s;
+          a {
+            @include text($color-white-0, $fs-3, $fw-normal);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-red-bg;
+            text-decoration: none;
+            padding: $pd-1;
+            border-radius: $border-radius;
+            text-align: center;
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .thumbNail {
+          img {
+          }
+          .play-video-button {
+            opacity: 1;
+            visibility: visible;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+          &::before {
+            height: 100%;
+          }
+        }
+
+        .info {
+          .name,
+          .time {
+            visibility: hidden;
+            opacity: 0;
+          }
+          .showHover {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to("large") {
+    margin-top: $mg-2;
+    .owl-prev,
+    .owl-next {
+      display: none !important;
+    }
+    .myTabContent {
+      padding: $pd-2;
+      .film {
+      }
+    }
+  }
+  @include respond-to("medium") {
+    .myTabContent {
+      .film {
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.myBanner {
+  padding: 120px 0 80px 0;
+  // background: url(./../../img/banner-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .left {
+    .content {
+      padding-top: $pd-2 * 4;
+      .textLeft {
+        @include text($color-white-0, xx-large, $fw-bold-1);
+        margin-bottom: $mg-1;
+      }
+      .smallTextLeft {
+        @include text($color-white-0, medium, $fw-normal);
+        margin-bottom: $mg-1;
+      }
+      .bottomTextLeft {
+        padding-top: $pd-1;
+        @include text($color-white-0, $fs-0, $fw-normal);
+        a {
+          @extend .bottomTextLeft;
+          text-decoration: underline;
+        }
+      }
+      button {
+        padding: $pd-1 $pd-3;
+        @include text($color-white-0, medium, $fw-bold-1);
+        background-color: $color-red-bg;
+        border: none;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  .right {
+    padding: 0;
+    position: relative;
+    .phoneRight {
+      position: relative;
+      padding: 0 28%;
+      // border-radius: 20px;
+
+      width: 100%;
+    }
+    .sliderScreenRight {
+      display: block;
+      position: absolute;
+      padding: 1.5% 29.2% 0 29.2%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 20px;
+      .item {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        border-radius: 20px;
+      }
+      .owl-stage-outer {
+        //4 cái này để hình kh tràn ra ngoài
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        transform: translate3d(0, 0, 0);
+        position: relative;
+        display: block;
+      }
+    }
+  }
+  @include respond-to("large") {
+    padding-top: 80px;
+    .left {
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        padding-top: 0;
+      }
+    }
+  }
+}

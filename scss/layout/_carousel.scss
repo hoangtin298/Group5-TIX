@@ -1,0 +1,150 @@
+.myCarousel {
+  // position: relative;
+
+  // top: 60px;
+  .carousel-indicators {
+    position: absolute;
+    bottom: 15%;
+    margin: 0 auto;
+    min-width: 110px;
+
+    z-index: 5;
+    li {
+      width: $fs-min;
+      height: $fs-min;
+      border-radius: 50%;
+      background-color: $color-gray-5;
+      opacity: 1;
+      border: none;
+
+      margin: 5px;
+    }
+    .active {
+      background-color: $color-red-bg;
+    }
+  }
+
+  .carousel-inner {
+    cursor: pointer;
+    .carousel-item {
+      position: relative;
+
+      .play-video-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.2s;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &:hover {
+        .play-video-button {
+          opacity: 1;
+          visibility: visible;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, $color-black-0, transparent 20%);
+      }
+    }
+  }
+
+  .carousel-control-prev-icon {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  .carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+  }
+
+  .homeTool {
+    display: flex;
+    align-items: center;
+    max-width: 940px;
+    height: 80px;
+    margin: auto;
+
+    position: absolute;
+    width: 100%;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #fff;
+    border-radius: 5px;
+
+    z-index: 5;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    .normal-block {
+      position: relative;
+      width: 30%;
+      height: 100%;
+
+      button {
+        @include homeToolBlock();
+      }
+      ::before {
+        @include borderRightHomeToolBlock();
+      }
+    }
+
+    .small-block {
+      width: calc(70% / 4);
+      height: 100%;
+      button {
+        @include homeToolBlock();
+      }
+      ::before {
+        @include borderRightHomeToolBlock();
+      }
+      .btn-muaVe {
+        @include text($color-white-0, $fs-0, $fw-bold-0);
+        background-color: $color-gray-3;
+        text-transform: uppercase;
+        padding: $pd-1;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border: none;
+          background-color: $color-gray-3;
+        }
+      }
+    }
+    .dropdown-menu {
+      @include text($color-black-0, $fs-0 !important, $fw-bold-0 !important);
+      .dropdown-item {
+        &:hover {
+          background-color: #60c5ef;
+          color: $color-white-0;
+        }
+      }
+    }
+  }
+
+  @include respond-to("large") {
+    .homeTool {
+      display: none;
+    }
+  }
+}
