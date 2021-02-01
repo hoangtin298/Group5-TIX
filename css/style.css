@@ -1020,6 +1020,199 @@ body {
   }
 }
 
+.my-showing {
+  margin-bottom: 25px;
+}
+
+.my-showing .container {
+  border: 1px solid #e9e9e9;
+}
+
+.my-showing .container .col-md-1 {
+  border-right: 1px solid #e9e9e9;
+}
+
+.my-showing .container .container__logo .logo-item {
+  opacity: 0.7;
+  height: 78px;
+  position: relative;
+}
+
+.my-showing .container .container__logo .logo-item img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-showing .container .container__logo .logo-item .line {
+  position: absolute;
+  display: block;
+  background-color: #e9e9e9;
+  width: 50px;
+  height: 1px;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+
+.my-showing .container .container__logo .logo-item:hover {
+  opacity: 1;
+}
+
+.my-showing .container .col-md-5 {
+  border-right: 1px solid #e9e9e9;
+}
+
+.my-showing .container .info-container {
+  position: relative;
+  height: 78px;
+}
+
+.my-showing .container .info-container .info-item {
+  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.my-showing .container .info-container .info-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.my-showing .container .info-container .info-item .detail-item {
+  margin-left: 13px;
+}
+
+.my-showing .container .info-container .info-item .detail-item p {
+  margin-bottom: 0 !important;
+}
+
+.my-showing .container .info-container .info-item .detail-item p:first-child {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.my-showing .container .info-container .info-item .detail-item p:nth-child(2) {
+  color: #949494;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.my-showing .container .info-container .info-item .detail-item a {
+  text-decoration: none;
+  color: #fa5238;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.my-showing .container .info-container .info-item:hover {
+  opacity: 1;
+}
+
+.my-showing .container .info-container .line {
+  position: absolute;
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+
+.my-showing .container .time .time-container {
+  margin-top: 12px;
+}
+
+.my-showing .container .time .time-container .item {
+  display: block;
+}
+
+.my-showing .container .time .time-container .item img {
+  width: 50px;
+  height: 50px;
+}
+
+.my-showing .container .time .time-container .item .item-info {
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.my-showing .container .time .time-container .item .item-info p:first-child {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.my-showing .container .time .time-container .item .item-info p:first-child span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin-right: 4px;
+}
+
+.my-showing .container .time .time-container .item .item-info p:last-child {
+  margin-bottom: 0;
+  margin-top: 2px;
+  color: #949494;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.my-showing .container .time .time-container .time-info {
+  margin-top: 10px;
+}
+
+.my-showing .container .time .time-container .time-info h5 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.my-showing .container .time .time-container .time-info a {
+  background-color: rgba(246, 246, 246, 0.5);
+  border: 1px solid #e4e4e4;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.my-showing .container .time .time-container .time-info a span {
+  color: #108f3e;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.my-showing .container .time .time-container .time-info a:hover span {
+  color: #fa5238;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.my-showing .container .col-md-6 {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-showing .container .col-md-6 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .container {
   max-width: 940px !important;
 }
